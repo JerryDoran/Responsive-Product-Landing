@@ -1,0 +1,45 @@
+// GLOBAL STYLES, VARIABLES AND RESETS
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+$main-color: #333;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: $main-color;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+}
+
+// HEADER SECTION
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+// MENU TOGGLE
+.menu-toggle {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  // display: none;
+  z-index: 999;
+}
