@@ -291,34 +291,34 @@ header {
       border: none !important;
     }
 
-    .menu-toggle {
-      display: flex !important;
-    }
-
     .fa-times {
       display: block;
       position: absolute;
       top: 2rem;
       right: 2rem;
     }
+  }
 
-    .active {
-      transform: translateX(0);
-    }
+  .menu-toggle {
+    display: block !important;
+  }
 
-    .overlay {
-      position: absolute;
-      width: 0;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.8);
-      z-index: 998;
-      opacity: 0;
-      transition: opacity 500ms ease-in;
-    }
+  .active {
+    transform: translateX(0);
+  }
 
-    .overlay.menu-open {
-      width: 100%;
-      opacity: 1;
-    }
+  .overlay {
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+  }
+
+  .overlay.menu-open {
+    width: 100%;
+    opacity: 1;
   }
 }
